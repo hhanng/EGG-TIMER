@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Egg Timer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>BOILING EGG WITH HAN HAN!</h1>
+      <p>Pick your doneness and hit start. I’ll count down all at once.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card" data-key="softBoiled">
+        <div class="card__emoji" aria-hidden="true">🥚</div>
+        <h2>Soft-boiled</h2>
+        <div class="time" id="softBoiled">06:00</div>
+        <p class="hint">Tender white, runny yolk</p>
+      </article>
+
+      <article class="card" data-key="jammyEgg">
+        <div class="card__emoji" aria-hidden="true">🍳</div>
+        <h2>Jammy</h2>
+        <div class="time" id="jammyEgg">08:00</div>
+        <p class="hint">Set white, jammy center</p>
+      </article>
+
+      <article class="card" data-key="hardBoiled">
+        <div class="card__emoji" aria-hidden="true">🐣</div>
+        <h2>Hard-boiled</h2>
+        <div class="time" id="hardBoiled">12:00</div>
+        <p class="hint">Fully set yolk</p>
+      </article>
+
+      <article class="card" data-key="extraHardBoiled">
+        <div class="card__emoji" aria-hidden="true">⏲️</div>
+        <h2>Extra hard</h2>
+        <div class="time" id="extraHardBoiled">15:00</div>
+        <p class="hint">Very firm yolk</p>
+      </article>
+    </section>
+
+    <footer class="controls">
+      <button id="start-button" class="btn">Start</button>
+      <button id="reset-button" class="btn btn--ghost">Reset</button>
+    </footer>
+  </main>
+
+  <script src="scipt.js"></script>
+</body>
+</html>
